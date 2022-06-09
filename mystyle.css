@@ -34,7 +34,7 @@
   }
   #main-header {
     width: 100%;
-    background: #fff;
+    background: rgb(0, 0, 0);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     position: relative;
     height: 60px;
@@ -45,24 +45,28 @@
     top: 5px;
     font-size: 0;
   }
+  #main-header > h1 > a > img {
+    position: absolute;
+    top: 13px;
+  }
   #main-header > nav {
     position: absolute;
     right: 30px;
     top: 20px;
     font-weight: 700;
-    
   }
   #main-header > nav > ul > li {
     display: inline-block;
     margin-left: 5em;
+    
   }
-  #main-header > nav a:hover {
-    text-decoration: underline;
-    color: var(--main-color);
-    background-color: #ff2020;
+  #main-header > nav a {
+    color: #fff;
    
+  } 
+  #main-header > nav a:hover {
+    color: var(--main-color);
   }
-
   .main {
     width: 100%;
     height: calc(100% - 60px);
@@ -76,7 +80,7 @@
     float: left;
   }
   .main .col h2 {
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.3);
     text-align: center;
     color: #fff;
     padding-top: 1rem;
@@ -88,14 +92,8 @@
     top: calc(50% - 109px / 2);
   }
   
-  /* .main .col span {
-    display: block;
-    font-size: small;
-    font-weight: normal;
-  } */
-  
   .btn-link {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     width: 120px;
     text-align: center;
@@ -111,7 +109,7 @@
     background: rgba(255, 255, 255, 0.75);
     color: #ffe600;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #ff2020;
+    background-color: rgba(255, 32, 32, 0.5);
   }
 
   .main .col:first-child {
